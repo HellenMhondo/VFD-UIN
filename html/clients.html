@@ -102,7 +102,7 @@
       <!-- Page Body Start-->
       <div class="page-body-wrapper">
         <!-- Page Sidebar Start-->
-         <div class="sidebar-wrapper">
+       <div class="sidebar-wrapper">
           <div>
             <div class="logo-wrapper"><a href="index.html"><img class="img-fluid for-light" src="../assets/images/logo/logo.png" alt="" width="170px"><img class="img-fluid for-dark" src="../assets/images/logo/logo_dark.png" alt=""></a>
               <div class="back-btn"><i class="fa fa-angle-left"></i></div>
@@ -257,15 +257,23 @@
                           </div>
                         </div>
                          <div class="row">
+                                  <div class="col-6">
+                               <label class="col-form-label pt-0" for="branch">Choose Plan (Basic , Standard , Premium)</label>
+                              <select class="js-example-basic-single col-sm-12">
+                         
+                            <option value="Ba">Basic</option>
+                            <option value="St">Standard</option>
+                     
+                       
+                            <option value="Pr">Premium</option>
+
+                      </select>
+                          </div>
                           <div class="col-6">
                               <label class="col-form-label pt-0" for="phone">Document Tin Number</label>
                              <input class="form-control" type="file">
                           </div>
                    
-                          <div class="col-6">
-                              <label class="col-form-label pt-0" for="role">Business License</label>
-                             <input class="form-control" type="file">
-                          </div>
                         </div>
                           <div class="row">
                           <div class="col-6">
@@ -299,6 +307,7 @@
                              <th>Phone</th>
                             <th>Region</th>
                               <th>Sales Person</th>
+                                 <th>Plan</th>
                             <th>Status</th>
                             <th>Documents</th>
                             <th>Action</th>
@@ -312,9 +321,12 @@
                                 <td>0764445266</td>
                                   <td>Pwani</td>
                                      <td>Salim Kambangwa</td>
+                                      <td>Basic</td>
                             <td c;><span class=" badge badge-primary">Active</span></td>
                          <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" ><i class="fa fa-eye"></i> View</a></td>
-                            <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#editclient"><i class="fa fa-pencil"></i> Edit</a><a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-danger btn-air-danger btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-thumbs-o-down"></i> Deactivate</a></td>
+                            <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" data-bs-toggle="modal" data-bs-target="#editclient"><i class="fa fa-pencil"></i> Edit</a><a class="icon" href="javascript:void(0)"></a>&nbsp;
+  <a class="icon" href="javascript:void(0)"></a><a class="btn btn-outline-primary btn-air-primary btn-sm" data-bs-toggle="modal" data-bs-target="#changeplan"href="javascript:void(0)"><i class="fa fa-refresh"></i> Change Plan</a><a class="icon" href="javascript:void(0)"></a>&nbsp;
+                              <a class="icon" href="javascript:void(0)"></a><a class="btn btn-danger btn-air-danger btn-sm "data-bs-toggle="modal" data-bs-target="#deactivateclient" "><i class="fa fa-thumbs-o-down"></i> Deactivate</a></td>
                           </tr>
                          <tr>
                             <td><a class="text-inherit" href="#">Neema Samson Magige</a></td>
@@ -323,9 +335,14 @@
                                 <td>0762759798</td>
                                   <td>Mara</td>
                                      <td> Nalphonce</td>
+                                       <td>Premium</td>
                             <td c;><span class=" badge badge-danger">Inactive</span></td>
                             <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-sm btn-air-secondary" ><i class="fa fa-eye"></i> View</a></td>
-                            <td><a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-air-secondary btn-sm" href="javascript:void(0)"><i class="fa fa-pencil"></i> Edit</a><a class="icon" href="javascript:void(0)"></a>&nbsp;<a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-primary btn-sm" href="javascript:void(0)"><i class="fa fa-thumbs-o-up"></i> Activate</a></td>
+                            <td>
+                              <a class="icon" href="javascript:void(0)"></a><a class="btn btn-secondary btn-air-secondary btn-sm" href="javascript:void(0)"><i class="fa fa-pencil"></i> Edit</a><a class="icon" href="javascript:void(0)"></a>&nbsp;
+                                 <a class="icon" href="javascript:void(0)"></a><a class="btn btn-outline-primary btn-air-primary btn-sm" href="javascript:void(0)"><i class="fa fa-refresh"></i> Change Plan</a><a class="icon" href="javascript:void(0)"></a>&nbsp;
+                              <a class="icon" href="javascript:void(0)"></a><a class="btn btn-primary btn-air-primary btn-sm" href="javascript:void(0)"><i class="fa fa-thumbs-o-up"></i> Activate</a>
+                            </td>
                           </tr>
                         </tbody>
                       </table>
@@ -347,7 +364,7 @@
                             <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
                           </div>
                           <div class="modal-body">
-                            <f      <form class="form-space theme-form ">
+                               <form class="form-space theme-form ">
                               <div class="row">
                           <div class="col-4">
                               <label class="col-form-label pt-0" for="fname">Client Name</label>
@@ -387,15 +404,24 @@
                           </div>
                         </div>
                              <div class="row">
+                               <div class="col-6">
+                               <label class="col-form-label pt-0" for="branch">Choose Plan (Basic , Standard , Premium)</label>
+                              <select class="js-example-basic-single col-sm-12">
+                         
+                            <option value="Ba">Basic</option>
+                            <option value="St">Standard</option>
+                     
+                       
+                            <option value="Pr">Premium</option>
+                          
+                      </select>
+                          </div>
                           <div class="col-6">
                               <label class="col-form-label pt-0" for="phone">Document Tin Number</label>
                              <input class="form-control" type="file">
                           </div>
                    
-                          <div class="col-6">
-                              <label class="col-form-label pt-0" for="role">Business License</label>
-                             <input class="form-control" type="file">
-                          </div>
+                         
                         </div>
                           <div class="row">
                           <div class="col-6">
@@ -418,6 +444,38 @@
                       </div>
                     </div>
                     <!-- End of Edit model-->
+                      <!-- Change Plan  model-->
+                     <div class="modal fade" id="changeplan" tabindex="-1" role="dialog" aria-labelledby="changeplan" aria-hidden="true">
+                      <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5 class="modal-title">Change Plan</h5>
+                            <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+                          </div>
+                          <div class="modal-body">
+                            <form class="form-space theme-form ">
+                       
+                               <label class="col-form-label pt-0" for="branch">Choose Plan (Basic , Standard , Premium)</label>
+                              <select class="js-example-basic-single col-sm-12">
+                         
+                            <option value="Ba">Basic</option>
+                            <option value="St">Standard</option>
+                     
+                       
+                            <option value="Pr">Premium</option>
+                          
+                      </select>
+                       
+                        </form>
+                          </div>
+                          <div class="modal-footer">
+                            <button class="btn btn-danger btn-air-danger" type="button" data-bs-dismiss="modal">No</button>
+                            <button class="btn btn-primary btn-air-primary" type="button">Yes</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                      <!-- End of Change Plan model-->
          <!-- Deactivate model-->
                      <div class="modal fade" id="deactivateclient" tabindex="-1" role="dialog" aria-labelledby="deactivateclient" aria-hidden="true">
                       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -436,12 +494,13 @@
                         </div>
                       </div>
                     </div>
+                      <!-- End of Deactivate model-->
         <!-- footer start-->
         <footer class="footer">
           <div class="container-fluid">
             <div class="row">
               <div class="col-md-12 footer-copyright text-center">
-                <p class="mb-0">Copyright 2021 © SofNet Technologies Limited </p>
+                <p class="mb-0">Copyright 2022 © SofNet Technologies Limited </p>
               </div>
             </div>
           </div>
